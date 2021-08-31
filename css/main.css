@@ -1,0 +1,298 @@
+/* Sidebar */
+.sidebar {
+  padding: 50px 15px 60px 55px;
+  width: 252px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  margin-bottom: 57px;
+}
+
+.sidebar-help {
+  margin-top: auto;
+}
+
+.nav {
+
+}
+
+.nav-title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 44px;
+}
+
+.nav-list {
+  font-size: 15.71px;
+}
+
+.nav-list li {
+  margin-bottom: 27px;
+}
+
+.nav-list a {
+  transition: color .2s ease-in;
+}
+.nav-list a:hover {
+  color: #FD2E24;
+}
+
+.nav-list img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 26px;
+  height: auto;
+  object-fit: none;
+}
+
+.help {
+  font-size: 15.71px;
+}
+
+.help-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+/* main */
+
+.main {
+  width: 1100px;
+  padding-top: 45px;
+  padding-bottom: 64px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+/* search */
+
+.search {
+  width: 490px;
+  height: 44px;
+}
+
+.search-label {
+  height: 100%;
+  display: flex;
+}
+
+.search-icon {
+  object-fit: none;
+  margin-right: 5px;
+}
+
+.search-input {
+  padding:0 7px;
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: "Circular Std";
+  background: none;
+}
+
+.search-input:focus, .search-input:active {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/* header-nav */
+.header-nav {
+  font-size: 17px;
+  font-family: "Circular Std";
+  font-weight: 500;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-link-text {
+  position: relative;
+}
+
+.header-nav-link-text::after{
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -9px;
+
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: "";
+  transition: width .2s ease-in;
+}
+
+.header-nav-link-text:hover::after {
+  width: 100%;
+}
+
+.header-nav-link-text.active::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -9px;
+
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: "";
+}
+.header-nav-link-text + .header-nav-link-text {
+  margin-left: 42px;
+}
+
+.header-nav-link-text + .header-nav-link-icon {
+  margin-left: 50px;
+}
+
+.header-nav-link-icon + .header-nav-link-icon {
+  margin-left: 25px;
+}
+
+/* cards wrapper */
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 70px;
+}
+
+.cards-wrapper-row {
+  display: flex;
+  column-gap: 20px;
+}
+
+.cards-wrapper-column {
+}
+
+.column-horizontal {
+  display: flex;
+  column-gap: 20px;
+}
+
+.column-vertical {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* cards */
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+
+  transition: all .2s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px #73d6d39a;
+}
+
+.card-horizontal {
+  width: 539px;
+  height: 180px;
+}
+
+.card-sale {
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-vertical {
+  width: 259px;
+  height: 380px;
+}
+
+.card-product {
+  position: relative;
+}
+
+.card-product-link {
+  width: 100%;
+  height: 100%;
+}
+
+.card-product-fav-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.card-product-fav-btn svg {
+  display: inline-block;
+  vertical-align: middle;
+
+  stroke: black;
+  fill: #fff;
+
+  transition: all .2s ease-in;
+}
+
+.card-product-fav-btn:hover svg {
+  stroke: #FD2E24;
+  fill: #FD2E24;
+}
+
+
+.card-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-section {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card-section-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-section-desc {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card-section-blue .card-section-title {
+  color: #001AA2;
+}
+
+.card-section-red .card-section-title {
+  color: #FD2E24;
+}
