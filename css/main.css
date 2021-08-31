@@ -35,6 +35,7 @@
 
 .nav-list a {
   transition: color .2s ease-in;
+  white-space: nowrap;
 }
 .nav-list a:hover {
   color: #FD2E24;
